@@ -31,6 +31,12 @@ You can build the container like this:
 podman build -t nerc-images/vscode-go:latest .
 ```
 
+You can run the container like this: 
+
+```bash
+podman run --rm -it --entrypoint /bin/bash nerc-images/vscode-go:latest
+```
+
 You can push the container to quay.io like this: 
 
 ```bash
